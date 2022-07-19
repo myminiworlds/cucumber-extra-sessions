@@ -51,7 +51,10 @@ Feature: Examples for DataTable
       | firstname | John |
       | lastname  | Doe  |
 
-
+#ListOfMap------->List<Map<String,String>>
+  #list.get(2).get("Category")----->Phones
+  #list.get(2).get("Product")------->Nexus 6
+  #list.get(2).get("expectedPrice")------------>650
   Scenario: verify each product price
     Given User is on the HomePage
     Then User should be able to see expected prices in following products
@@ -65,7 +68,8 @@ Feature: Examples for DataTable
       | Monitors | Apple monitor 24  | 400           |
       | Monitors | ASUS Full HD      | 230           |
 
-
+#DataTable   - ListOfMap
+  #list1.get(2).get(2)----->650
   Scenario: verify each product price listOfList
     Given User is on the HomePage
     Then User should be able to see expected prices in following products with listOflist
