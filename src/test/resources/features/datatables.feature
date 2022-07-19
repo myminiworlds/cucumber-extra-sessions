@@ -55,6 +55,7 @@ Feature: Examples for DataTable
   #list.get(2).get("Category")----->Phones
   #list.get(2).get("Product")------->Nexus 6
   #list.get(2).get("expectedPrice")------------>650
+  @regression
   Scenario: verify each product price
     Given User is on the HomePage
     Then User should be able to see expected prices in following products
